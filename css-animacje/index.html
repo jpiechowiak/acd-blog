@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			@keyframes div-anim
+			{
+				0% {background: #000;}
+				40% {width: 400px;}
+				70% {height: 200px;}
+				100% {background: #999;}
+			}
+			
+			@-webkit-keyframes div-anim
+			{
+				0% {background: #000;}
+				40% {width: 400px;}
+				70% {height: 200px;}
+				100% {background: #999;}
+			}
+			
+			@-moz-keyframes div-anim
+			{
+				0% {background: #000;}
+				40% {width: 400px;}
+				70% {height: 200px;}
+				100% {background: #999;}
+			}
+			
+			@-o-keyframes div-anim
+			{
+				0% {background: #000;}
+				40% {width: 400px;}
+				70% {height: 200px;}
+				100% {background: #999;}
+			}
+			
+			@-ms-keyframes div-anim
+			{
+				0% {background: #000;}
+				40% {width: 400px;}
+				70% {height: 200px;}
+				100% {background: #999;}
+			}
+			
+			#test-div{
+				width: 200px;
+				height: 100px;
+				background: #999;
+			}
+
+			#test-div:hover{
+				animation: div-anim 8s;
+				-webkit-animation: div-anim 8s;
+				-moz-animation: div-anim 8s;
+				-o-animation: div-anim 8s;
+				-ms-animation: div-anim 8s;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.altcontroldelete.pl/artykuly/tworzenie-animacji-w-css3/">Wróć do wpisu</a>
+		<div id="test-div"></div>
+	</body>
+</html>

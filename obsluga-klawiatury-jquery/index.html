@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				function WriteToLog(oEvent){
+					$("#log").append("Zdarzenie: <strong>" + oEvent.type + 
+						"</strong>, kod przycisku: <strong>" + 
+						oEvent.keyCode + "</strong><br />");
+				}
+				$(window).bind("keydown", function(oEvent){
+					WriteToLog(oEvent);
+				});
+				$(window).bind("keypress", function(oEvent){
+					WriteToLog(oEvent);
+				});
+				$(window).bind("keyup", function(oEvent){
+					WriteToLog(oEvent);
+				});
+			});
+		</script>
+		<title>Test</title>
+	</head>
+	<body>
+		<p id="log"></p>
+	</body>
+</html>

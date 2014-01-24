@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jerzy Piechowiak" />
+		<title>FormWizard</title>
+		<link rel="stylesheet" href="css/cupertino/jquery-ui-1.8.18.custom.css" /> 
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script src="js/jquery.form.wizard-min.js"></script>
+		<script src="js/test.js"></script>
+	</head>
+	<body>
+		<button id="btn-run">Uruchom kreator</button>
+		<div id="dialog-example" style="display: none;">
+			<form action="#" id="dialog-example-form">
+				<div id="dialog-example-form-first" class="step">
+					<label for="name">Imię</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div id="dialog-example-form-second" class="step">
+					<label for="surname">Nazwisko</label>
+					<input type="text" name="surname" id="surname" />
+				</div>
+				<div id="dialog-example-form-third" class="step">
+					<h1>Podsumowanie:</h1>
+					<p>Imię: <span id="spname" /></p>
+					<p>Nazwisko: <span id="spsurname" /></p>
+				</div>				
+			</form>
+		</div>		
+	</body>
+</html>

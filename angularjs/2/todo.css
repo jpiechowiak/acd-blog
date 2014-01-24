@@ -1,0 +1,12 @@
+﻿ul{
+	padding-left: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.done-true {
+	text-decoration: line-through;
+	color: grey;
+}

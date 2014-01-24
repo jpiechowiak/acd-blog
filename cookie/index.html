@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script>
+			$().ready(function() {
+				var sName = "testcookie";
+				$("#close-cookie-warn").click(function(){
+					var oExpire = new Date();
+					oExpire.setTime((new Date()).getTime() + 3600000*24*365);
+					document.cookie = sName + "=1;expires=" + oExpire;
+					$("#cookie-warn").hide("slow");
+				});
+			 
+				var sStr = '; '+ document.cookie +';';
+				var nIndex = sStr.indexOf('; '+ escape(sName) +'=');
+				if (nIndex === -1) {
+					$("#cookie-warn").show();
+				}
+			});		
+		</script>
+		<style>
+			/* Cookie warning */
+			#cookie-warn{
+				position: fixed;
+				bottom: 0;
+				background: #EEE;
+				margin: 0;
+				padding: 15px;
+				width: 100%;
+				display: none;
+				z-index: 99;
+			}
+			 
+			#cookie-warn a{
+				color: #D66E1A;
+				text-transform: uppercase;
+				float: right;
+				padding-right: 20px;
+			}
+			 
+			#cookie-warn p{
+				font-size: 12px;
+				color: #333;
+			}		
+		</style>
+	</head>
+	<body>
+		<section id="cookie-warn">
+			<p><strong>UWAGA!</strong> Niniejsza strona wykorzystuje pliki cookies. 
+			Informacje uzyskane za pomocą cookies wykorzystywane są głównie 
+			w celach statystycznych. Pozostając na stronie godzisz się na 
+			ich zapisywanie w Twojej przeglądarce. 
+			<a href="javascript:void(0);" id="close-cookie-warn"
+			>Zamknij ostrzeżenie</a></p>
+		</section>
+	</body>
+</html>
