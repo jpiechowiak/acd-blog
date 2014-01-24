@@ -1,0 +1,1 @@
+Fragmenty kodu zamieszczone na blogu Alt Control Delete.
