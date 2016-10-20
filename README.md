@@ -13,6 +13,10 @@ Directory: `cookie`
 Introduction to CSS3 animations  
 Directory: `css-animacje`  
 
+### [DataTemplateSelector w Xamarin.Forms](http://www.altcontroldelete.pl/artykuly/datatemplateselector-w-xamarin-forms/)
+How to use DataTemplateSelector class in your own Xamarin.Forms project
+Directory: `datatemplateselector-xf`  
+
 ### [Tworzenie efektownych kreatorów formularzy w jQuery](http://www.altcontroldelete.pl/artykuly/tworzenie-efektownych-kreatorow-formularzy-w-jquery/)
 Simple tutorial to jQuery FormWizard plugin  
 Directory: `formwizard`  

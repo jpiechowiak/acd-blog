@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DataTemplateSelectorXamarinForms;assembly=DataTemplateSelectorXamarinForms"
+             x:Class="DataTemplateSelectorXamarinForms.MainPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:MyDataTemplateSelector x:Key="MyDataTemplateSelector"></local:MyDataTemplateSelector>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <ListView ItemsSource="{Binding Items}" ItemTemplate="{StaticResource MyDataTemplateSelector}" />
+</ContentPage>
